@@ -4,3 +4,10 @@ export function invert(array: number[]): number[] {
     }
   return array;
   }
+________________
+
+export function lastSurvivor(letters: string, coords: number[]): string {
+  let lettersArray = letters.split('')
+  coords.forEach(n => lettersArray.splice(n,1))
+  return lettersArray.join('')
+}
