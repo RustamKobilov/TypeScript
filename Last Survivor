@@ -1,0 +1,9 @@
+export function lastSurvivor(letters: string, coords: number[]): string {
+  let b=letters.split("");
+  console.log(b)
+  for(let x=0;x<coords.length;x++){
+  b.splice(coords[x],1)    
+  }
+  let g=b.join("");
+  return g;
+}
